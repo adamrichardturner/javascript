@@ -4,5 +4,4 @@ const compareTeeth = (species1, species2) => species1.numTeeth > species2.numTee
 
 const sortSpeciesByTeeth = arr => arr.sort(compareTeeth)
 
-// Feel free to comment out the code below when you're ready to test your function!
 console.log(sortSpeciesByTeeth(speciesArray))
