@@ -31,8 +31,6 @@ function dotCalculator (equation) {
        return count;
    }
 
-   console.log(equation.split('').reverse())
-
    const countRight = dots => {
        // Counts dots to the right of the operand
        let count = 0;
