@@ -23,6 +23,9 @@ function countSmileys(arr) {
     In case of an empty array return 0. You will not be tested with invalid input (input will always be an array). Order of the face (eyes, nose, mouth) elements will always be the same.
     */
 
+   // Store in smileys an array of valid smileys. Using if statements to check the validity of chars
+   // for each stage in building the smiley.
+   
    let smileys = arr.filter(face => {
        if(face.length === 3) {
            if(face[0] === ':' || face[0] === ';') {
