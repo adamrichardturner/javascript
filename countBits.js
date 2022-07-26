@@ -8,9 +8,14 @@ var countBits = function(n) {
     should return 5 in this case
     */
 
-   // Convert n to an unsigned binary string representation
-   // Convert to array and run reduce to add all bits equal to one
-   return (n >>> 0).toString(2).split('').reduce((a, b) => Number(a) + Number(b));
+   let binary = n.toString(2).split('');
+   let count = [];
+   for(let i = 0; i < binary.length; i++) {
+       if(Number(binary[i]) === 1) {
+           count.push(binary[i])
+       }
+   }
+   return count.length;
 };
 
-console.log(countBits(1234)); // 5
+console.log(countBits(5840226131)); // 17
