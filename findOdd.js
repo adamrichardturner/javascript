@@ -31,4 +31,4 @@ function findOdd(A) {
    return Number(Object.keys(counts).find(key => counts[key] === odd));
 }
 
-console.log(findOdd([0,1,0,1,0])); 
+console.log(findOdd([0,1,0,1,0])); // 0

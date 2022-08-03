@@ -15,8 +15,8 @@ function removeZeros(array) {
             array[count++] = array[i];
         }
     }
+    console.log(count)
     console.log(array)
-    console.log(array[2])
     while(count < array.length) {
         array[count++] = 0;
     }

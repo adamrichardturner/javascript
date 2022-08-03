@@ -15,7 +15,6 @@ function isPangram(string) {
             alphaCount.push(i);
         }
     })
-   console.log(alphaCount.sort())
    return [...new Set(alphaCount)].length === 26 ? true : false;
 }
 console.log(isPangram('ABCD45EFGH,IJK,LMNOPQR56STUVW3XYZ'))

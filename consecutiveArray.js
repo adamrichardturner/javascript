@@ -43,5 +43,5 @@ function solution(statues) {
     }
 }
 
-let testStatues = [6, 2, 3, 8];
+let testStatues = [8,5,6,1];
 console.log(solution(testStatues)); // 3
