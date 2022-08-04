@@ -14,4 +14,4 @@ function doubleEveryOther(a) {
    return a.map((e, i) => i % 2 != 0 ? e * 2 : e);
 }
 
-console.log(doubleEveryOther([1,2,3,4]));
+console.log(doubleEveryOther([1,2,3,4])); // [1,4,3,8]
