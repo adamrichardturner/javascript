@@ -27,7 +27,10 @@ function numberOfPairs(gloves) {
    gloves.forEach(glove => glove in allGloves ? allGloves[glove] += 1 : allGloves[glove] += 0);
    // Following validation, return the values of allGloves / 2 to get pairs in floating point notation, Floor divide and sum
    // up to get the total number of valid pairs
-   return (gloves.length > 0 ? Object.values(allGloves).map(n => n / 2).map(n => Math.floor(n)) : 0).reduce((a, b) => a + b);
+   return (gloves.length > 0 ? Object.values(allGloves)
+                                     .map(n => n / 2)
+                                     .map(n => Math.floor(n)) : 0)
+                                     .reduce((a, b) => a + b);
 }
 
 console.log(numberOfPairs(['red','red'])); // 1
