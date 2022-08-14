@@ -1,4 +1,3 @@
-console.log(numberOfPairs(['red','red']));
-// console.log(numberOfPairs(['red','green','blue']));
-// console.log(numberOfPairs(["red", "green", "red", "blue", "blue"]));
-// console.log(numberOfPairs(["red", "red", "red", "red", "red", "red"]));
+if(i === sorted[i].index) {
+           array[i] = sorted[i].num;
+       }
