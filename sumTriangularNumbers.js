@@ -35,4 +35,4 @@ function sumTriangularNumbers(n) {
    }
 }
 
-console.log(sumTriangularNumbers(-22)) // 20
+console.log(sumTriangularNumbers(4)) // 20
