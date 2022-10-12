@@ -20,7 +20,7 @@ function scramble(str1, str2) {
     let total = 0;
     // For each element in str1...
     str1.split('').forEach(e => {
-        // If str2 includes that element...
+        // If str2 includes that element
         if(str2.includes(e)) {
             // Assign it as a key : value pair, with number of occurences of
             // that element as the value
