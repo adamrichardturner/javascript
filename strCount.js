@@ -14,14 +14,10 @@ function strCount(str, letter) {
     The second string argument will always be of length 1
     */
     let count = 0;
-    for(let char of str) {
-        if(char === letter) {
-            count++;
-        }
-    }
+    str.split('').forEach(e => e === letter ? count++ : 0);
     return count;
 }
 
-console.log(strCount("Hello", "o"));
-console.log(strCount("Hello", "l"));
-console.log(strCount("", "z"));
+console.log(strCount("Hello", "o")); // 1
+console.log(strCount("Hello", "l")); // 2
+console.log(strCount("", "z")); // 0
