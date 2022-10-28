@@ -13,4 +13,4 @@ function oddCount(n) {
 }
 
 console.log(oddCount(7)); // 3
-console.log(oddCount(15)); // 7
+console.log(oddCount(15023)); // 7
