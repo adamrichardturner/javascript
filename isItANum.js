@@ -29,4 +29,4 @@ function isItANum(str) {
     return count === 11 && newNum[0] === '0' ? newNum : 'Not a phone number';
 }
 
-console.log(isItANum('efRFS:)0207ERGQREG88349F82!'));
+console.log(isItANum('efRFS:)0207ERGQREG88349F82!')); // 02078834982
