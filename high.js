@@ -52,4 +52,4 @@ function high(x) {
     return totals[totals.length-1][1] === totals[totals.length-2][1] ? totals[totals.length-2][0] : totals[totals.length-1][0];
 }
 
-console.log(high('man i need a taxi up to ubud')); // taxi
+console.log(high('newmbfskjnzawkrtznltylaklnsnj kovjvztnwtirhosipbfzcoeutggjg bxtrgnctjgwuoamfrdyufcxeznxve gqabzggmiqeqzwbfykzjukvnxjvvc')); // taxi
