@@ -1,27 +1,17 @@
-function strCount(str, letter) {  
+function removeUrlAnchor(url) {
     /*
-    Create a function that accepts 2 string arguments and returns an 
-    integer of the count of occurrences the 2nd argument is found in the first one.
+    Complete the function/method so that it returns the url with anything after the anchor (#) removed.
 
-    If no occurrences can be found, a count of 0 should be returned.
-
-    ("Hello", "o")  ==>  1
-    ("Hello", "l")  ==>  2
-    ("", "z")       ==>  0
-    Notes:
-
-    The first argument can be an empty string
-    The second string argument will always be of length 1
+    Examples
+    "www.codewars.com#about" --> "www.codewars.com"
+    "www.codewars.com?page=1" -->"www.codewars.com?page=1"
     */
-    let count = 0;
-    for(let char of str) {
-        if(char === letter) {
-            count++;
-        }
-    }
-    return count;
+
+    // If the anchor exists, return url sliced up to but not including anchor
+    // else just return url
+    return url.indexOf('#') > -1 ? url.slice(0, url.indexOf('#')) : url;
 }
 
-console.log(strCount("Hello", "o"));
-console.log(strCount("Hello", "l"));
-console.log(strCount("", "z"));
+console.log(removeUrlAnchor("www.codewars.com#about")); // www.codewars.com
+console.log(removeUrlAnchor("www.codewars.com?page=1")); // www.codewars.com?page=1
+console.log(removeUrlAnchor('www.codewars.com/katas/')); // www.codewars.com/katas/
