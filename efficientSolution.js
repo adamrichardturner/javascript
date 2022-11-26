@@ -21,4 +21,3 @@ function efficientSolution(heights) {
   
 const testArray = [4, 2, 1, 3, 0, 1, 2];
 console.log(efficientSolution(testArray));
-
