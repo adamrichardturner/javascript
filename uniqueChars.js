@@ -7,21 +7,15 @@ function hasUniqueChars(str) {
     The string may contain any of the 128 ASCII characters. 
 
     Characters are case-sensitive, e.g. 'a' and 'A' are considered different characters.
-    */
-
-  // Store in seen our unique values
+  */
+  // Store in seen our chars as we iterate over str
   let seen = ''
-  // For each char in str...
   for (let i = 0; i < str.length; i++) {
-    // Concatenate the char to seen
     seen += str[i]
-    // If the next char is already in seen...
     if (seen.includes(str[i + 1])) {
-      // It's not unique, return false
       return false
     }
   }
-  // Otherwise, if the loop runs through without returning false, all chars are unique
   return true
 }
 
