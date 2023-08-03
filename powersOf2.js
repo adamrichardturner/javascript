@@ -12,8 +12,9 @@ function powersOfTwo(n) {
 
     // Return an array iterating over all nums upto n - map each value
     // as a power of 2.
-
-    return [...Array(n + 1).keys()].map((i) => 2 ** i)
+    return [...Array(n + 1).keys()].map((num) => 2 ** num)
 }
 
+console.log(powersOfTwo(0)) // [ 1 ]
+console.log(powersOfTwo(1)) // [ 1, 2 ]
 console.log(powersOfTwo(2)) // [ 1, 2, 4 ]
