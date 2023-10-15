@@ -5,6 +5,10 @@ function sortAnimal(animal) {
     })
 }
 
+if (-1) {
+    console.log('Does this run?')
+}
+
 // Sample animal data.
 var animal = [
     { name: 'Cat', numberOfLegs: 4 },
