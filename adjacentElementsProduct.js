@@ -20,3 +20,5 @@ function solution(inputArray) {
 
 input = [3, 6, -2, -5, 7, 3]
 
+// just a test
+
