@@ -22,3 +22,4 @@ input = [3, 6, -2, -5, 7, 3]
 
 // just a test
 const hello = 'hi'
+const bye = 'bye'
